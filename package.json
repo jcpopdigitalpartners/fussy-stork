@@ -1,0 +1,18 @@
+{
+  "name": "containers-in-practice-labs",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "The learner workload, investigations and evidence checks for Containers in Practice.",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "setup": "npm --prefix api ci",
+    "start": "npm --prefix api start",
+    "test": "node --test api/server.test.mjs tests/*.test.mjs",
+    "check": "node scripts/check-repository.mjs",
+    "vet": "node scripts/vet.mjs",
+    "load": "node scripts/load.mjs"
+  }
+}

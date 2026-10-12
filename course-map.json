@@ -1,0 +1,305 @@
+{
+  "version": "0.1.0",
+  "courseUrl": "https://containers-in-practice-studio.jobechoi.chatgpt.site/",
+  "modules": [
+    {
+      "id": 0,
+      "title": "Prepare",
+      "path": "labs/module-0/README.md",
+      "lessons": [
+        {
+          "id": "baseline",
+          "number": "0.0",
+          "title": "A testable baseline",
+          "path": "labs/module-0/0.0-baseline.md"
+        },
+        {
+          "id": "toolchain",
+          "number": "0.1",
+          "title": "Prepare your toolchain",
+          "path": "labs/module-0/0.1-toolchain.md"
+        },
+        {
+          "id": "preflight",
+          "number": "0.2",
+          "title": "Verify your environment",
+          "path": "labs/module-0/0.2-preflight.md"
+        },
+        {
+          "id": "recovery",
+          "number": "0.3",
+          "title": "Recover deliberately",
+          "path": "labs/module-0/0.3-recovery.md"
+        },
+        {
+          "id": "learning-modes",
+          "number": "0.4",
+          "title": "Choose your depth",
+          "path": "labs/module-0/0.4-learning-modes.md"
+        },
+        {
+          "id": "checkpoint",
+          "number": "0.5",
+          "title": "Checkpoint 0 & next steps",
+          "path": "labs/module-0/0.5-checkpoint.md"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "title": "Build",
+      "path": "labs/module-1/README.md",
+      "lessons": [
+        {
+          "id": "m1-opening",
+          "number": "1.1.0",
+          "title": "The reproducibility problem",
+          "path": "labs/module-1/1.1.0-m1-opening.md"
+        },
+        {
+          "id": "inspect",
+          "number": "1.1.1",
+          "title": "Inspect the workload",
+          "path": "labs/module-1/1.1.1-inspect.md"
+        },
+        {
+          "id": "image",
+          "number": "1.1.2",
+          "title": "Build an OCI image",
+          "path": "labs/module-1/1.1.2-image.md"
+        },
+        {
+          "id": "config",
+          "number": "1.2.0",
+          "title": "Externalize configuration",
+          "path": "labs/module-1/1.2.0-config.md"
+        },
+        {
+          "id": "network",
+          "number": "1.2.1",
+          "title": "Connect the services",
+          "path": "labs/module-1/1.2.1-network.md"
+        },
+        {
+          "id": "storage",
+          "number": "1.2.2",
+          "title": "Preserve application data",
+          "path": "labs/module-1/1.2.2-storage.md"
+        },
+        {
+          "id": "harden",
+          "number": "1.2.3",
+          "title": "Improve the image",
+          "path": "labs/module-1/1.2.3-harden.md"
+        },
+        {
+          "id": "iac",
+          "number": "1.2.4",
+          "title": "Describe the environment",
+          "path": "labs/module-1/1.2.4-iac.md"
+        },
+        {
+          "id": "rebuild",
+          "number": "1.2.5",
+          "title": "Destroy and reconstruct",
+          "path": "labs/module-1/1.2.5-rebuild.md"
+        },
+        {
+          "id": "challenge",
+          "number": "1.2.6",
+          "title": "The staging challenge",
+          "path": "labs/module-1/1.2.6-challenge.md"
+        },
+        {
+          "id": "conclusion",
+          "number": "1.2.7",
+          "title": "Checkpoint 1",
+          "path": "labs/module-1/1.2.7-conclusion.md"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Scale",
+      "path": "labs/module-2/README.md",
+      "lessons": [
+        {
+          "id": "m2-opening",
+          "number": "2.0",
+          "title": "When one container isn’t enough",
+          "path": "labs/module-2/2.0-m2-opening.md"
+        },
+        {
+          "id": "m2-baseline",
+          "number": "2.1",
+          "title": "Establish a performance baseline",
+          "path": "labs/module-2/2.1-m2-baseline.md"
+        },
+        {
+          "id": "m2-replicas",
+          "number": "2.2",
+          "title": "Introduce replicas and Kubernetes",
+          "path": "labs/module-2/2.2-m2-replicas.md"
+        },
+        {
+          "id": "m2-shared-state",
+          "number": "2.3",
+          "title": "The problem with local state",
+          "path": "labs/module-2/2.3-m2-shared-state.md"
+        },
+        {
+          "id": "m2-resources",
+          "number": "2.4",
+          "title": "Give the scheduler useful information",
+          "path": "labs/module-2/2.4-m2-resources.md"
+        },
+        {
+          "id": "m2-load",
+          "number": "2.5",
+          "title": "Measure changes under load",
+          "path": "labs/module-2/2.5-m2-load.md"
+        },
+        {
+          "id": "m2-hpa",
+          "number": "2.6",
+          "title": "Horizontal Pod Autoscaling",
+          "path": "labs/module-2/2.6-m2-hpa.md"
+        },
+        {
+          "id": "m2-bottleneck",
+          "number": "2.7",
+          "title": "Why more replicas may not help",
+          "path": "labs/module-2/2.7-m2-bottleneck.md"
+        },
+        {
+          "id": "m2-checkpoint",
+          "number": "2.8",
+          "title": "Challenge and Checkpoint 2",
+          "path": "labs/module-2/2.8-m2-checkpoint.md"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Recover",
+      "path": "labs/module-3/README.md",
+      "lessons": [
+        {
+          "id": "m3-0",
+          "number": "3.0",
+          "title": "When a working system fails",
+          "path": "labs/module-3/3.0-m3-0.md"
+        },
+        {
+          "id": "m3-1",
+          "number": "3.1",
+          "title": "What survives a replacement?",
+          "path": "labs/module-3/3.1-m3-1.md"
+        },
+        {
+          "id": "m3-2",
+          "number": "3.2",
+          "title": "Give data a lifecycle of its own",
+          "path": "labs/module-3/3.2-m3-2.md"
+        },
+        {
+          "id": "m3-3",
+          "number": "3.3",
+          "title": "Persistence is not a backup",
+          "path": "labs/module-3/3.3-m3-3.md"
+        },
+        {
+          "id": "m3-4",
+          "number": "3.4",
+          "title": "Healthy, ready and alive",
+          "path": "labs/module-3/3.4-m3-4.md"
+        },
+        {
+          "id": "m3-5",
+          "number": "3.5",
+          "title": "Give requests time to finish",
+          "path": "labs/module-3/3.5-m3-5.md"
+        },
+        {
+          "id": "m3-6",
+          "number": "3.6",
+          "title": "Deploy without creating an incident",
+          "path": "labs/module-3/3.6-m3-6.md"
+        },
+        {
+          "id": "m3-7",
+          "number": "3.7",
+          "title": "Break it deliberately",
+          "path": "labs/module-3/3.7-m3-7.md"
+        },
+        {
+          "id": "m3-8",
+          "number": "3.8",
+          "title": "Checkpoint 3: Prove recovery",
+          "path": "labs/module-3/3.8-m3-8.md"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Constrain",
+      "path": "labs/module-4/README.md",
+      "lessons": [
+        {
+          "id": "m4-0",
+          "number": "4.0",
+          "title": "Working ≠ safe",
+          "path": "labs/module-4/4.0-m4-0.md"
+        },
+        {
+          "id": "m4-1",
+          "number": "4.1",
+          "title": "Run without root",
+          "path": "labs/module-4/4.1-m4-1.md"
+        },
+        {
+          "id": "m4-2",
+          "number": "4.2",
+          "title": "Make the root filesystem read-only",
+          "path": "labs/module-4/4.2-m4-2.md"
+        },
+        {
+          "id": "m4-3",
+          "number": "4.3",
+          "title": "Capabilities + seccomp",
+          "path": "labs/module-4/4.3-m4-3.md"
+        },
+        {
+          "id": "m4-4",
+          "number": "4.4",
+          "title": "Scan, then decide",
+          "path": "labs/module-4/4.4-m4-4.md"
+        },
+        {
+          "id": "m4-5",
+          "number": "4.5",
+          "title": "An SBOM makes dependencies visible",
+          "path": "labs/module-4/4.5-m4-5.md"
+        },
+        {
+          "id": "m4-6",
+          "number": "4.6",
+          "title": "Policy that can say no",
+          "path": "labs/module-4/4.6-m4-6.md"
+        },
+        {
+          "id": "m4-7",
+          "number": "4.7",
+          "title": "Name, verify, then run",
+          "path": "labs/module-4/4.7-m4-7.md"
+        },
+        {
+          "id": "m4-8",
+          "number": "4.8",
+          "title": "Secure and still useful",
+          "path": "labs/module-4/4.8-m4-8.md"
+        }
+      ]
+    }
+  ]
+}
