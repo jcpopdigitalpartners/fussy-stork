@@ -21,7 +21,7 @@ The clone already includes Git history. Do not run `git init` or create a second
 
 Use the same root directory throughout the course. If it already exists, inspect it and preserve any earlier work; reuse a clone of this repository or choose a separate destination and adjust later paths consistently. The portable bundle remains an offline distribution option.
 
-Before the application investigation, check the six preparation tools:
+In 0.1, prepare Linux/Git and clone this workspace. In 0.2, install the remaining preparation tools and establish the baseline:
 
 ```bash
 bash scripts/preflight.sh --runtime

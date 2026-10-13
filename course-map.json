@@ -14,16 +14,16 @@
           "path": "labs/module-0/0.0-baseline.md"
         },
         {
-          "id": "toolchain",
+          "id": "preflight",
           "number": "0.1",
-          "title": "Prepare your toolchain",
-          "path": "labs/module-0/0.1-toolchain.md"
+          "title": "Clone your student workspace",
+          "path": "labs/module-0/0.1-preflight.md"
         },
         {
-          "id": "preflight",
+          "id": "toolchain",
           "number": "0.2",
-          "title": "Verify your environment",
-          "path": "labs/module-0/0.2-preflight.md"
+          "title": "Establish your toolchain baseline",
+          "path": "labs/module-0/0.2-toolchain.md"
         },
         {
           "id": "recovery",

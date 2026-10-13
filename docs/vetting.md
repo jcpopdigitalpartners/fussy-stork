@@ -14,7 +14,7 @@ The check reports describe requirements, not completed configuration. Use the fa
 
 ## Preparation · Module 0
 
-This Bash check does not require Node.js:
+Clone the student workspace in 0.1. Install the remaining tools and run this baseline check in 0.2; it does not require Node.js:
 
 ```bash
 bash scripts/preflight.sh --runtime

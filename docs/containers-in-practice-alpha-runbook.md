@@ -30,7 +30,7 @@ Record the actual SHA, browser/version, host OS, Linux guest/distribution, alloc
 
 ### Handoff status before the alpha run
 
-- The published course now uses the hosted GitHub clone workflow in Module 0.2, its practice links and the Git primer. It opens `~/containers-practice-starter`, inspects the supplied history, runs the repository preflight and commits its saved report with Checkpoint 0. The obsolete ZIP handoff has been removed.
+- The published course now uses the hosted GitHub clone workflow in Module 0.1, its practice links and the Git primer. It opens `~/containers-practice-starter`, inspects the supplied history, runs the repository preflight and commits its saved report with Checkpoint 0. The obsolete ZIP handoff has been removed.
 - The matching README and maintainer-guide corrections are prepared in `hosted-learner-handoff.patch`. GitHub rejected writes from the editing session, so apply and push this patch before distributing the repository. From your existing clone on main, with saved work and a clean working tree, run `git pull --ff-only`, `git am ~/Downloads/hosted-learner-handoff.patch`, then `git push origin main`. The patch was tested against the published starter commit. Record the actual new SHA after applying it.
 - The clone command names its destination explicitly so the course's `~/containers-practice-starter` paths match. If you choose a different folder, use that path consistently. Preserve existing work rather than cloning over it.
 - The Site currently allows only its owner. Before testing with another learner, arrange authorized course access and test the invitation/sign-in journey. GitHub repository access does not grant Site access.
@@ -232,38 +232,34 @@ Result: NOT RUN · Elapsed time: ___ · Evidence: ___ · Issues: ___
 
 Result: NOT RUN · Elapsed time: ___ · Evidence: ___ · Issues: ___
 
-### 00.1 · Prepare your toolchain
+### 00.1 · Clone your student workspace
 
-[Open the lesson](https://containers-in-practice-studio.jobechoi.chatgpt.site/#toolchain)
+[Open the lesson](https://jcpopdigitalpartners.github.io/containers-in-practice-course/#preflight)
 
-[Repository brief](https://github.com/jcpopdigitalpartners/fussy-stork/blob/5650429f532b7ce8f8b9532c0276516ce7564869/labs/module-0/0.1-toolchain.md)
+[Repository brief](../labs/module-0/0.1-preflight.md)
 
-- [ ] Choose your operating system in the installation guide. Install and verify the six tools. Leave Kubernetes for Module 2.
-- [ ] Test one claim in your local environment. Capture the command, result, and any failure.
-- [ ] Compare the observation with the evidence target. Explain what remains unproven.
+- [ ] Use the setup guide to prepare Linux and Git. Clone https://github.com/jcpopdigitalpartners/fussy-stork.git into ~/containers-practice-starter inside Linux.
+- [ ] Inspect origin and the supplied history. Confirm README.md, api/, labs/, scripts/, work/ and evidence/ exist; the student repository is fussy-stork.
+- [ ] Set your local Git identity and inspect the clean starting state. Continue to 0.2 to install and verify the remaining course tools.
 
-**Required evidence:** Choose your operating system, install the tools, and verify each command.
-
-**Check:** Run `bash scripts/preflight.sh --runtime`. Node.js is not needed for this preparation check.
+**Required evidence:** The student repository is cloned inside Linux, origin identifies fussy-stork, and the supplied history and lab files are visible.
 
 - [ ] Common interface checks completed
 - [ ] Evidence saved and retrievable
 
 Result: NOT RUN · Elapsed time: ___ · Evidence: ___ · Issues: ___
 
-### 00.2 · Verify your environment
+### 00.2 · Establish your toolchain baseline
 
-[Open the lesson](https://containers-in-practice-studio.jobechoi.chatgpt.site/#preflight)
+[Open the lesson](https://jcpopdigitalpartners.github.io/containers-in-practice-course/#toolchain)
 
-[Repository brief](https://github.com/jcpopdigitalpartners/fussy-stork/blob/5650429f532b7ce8f8b9532c0276516ce7564869/labs/module-0/0.2-preflight.md)
+[Repository brief](../labs/module-0/0.2-toolchain.md)
 
-- [ ] Run the six version checks and the Podman hello image. Explain which result proves that a container actually executes.
-- [ ] Clone this repository inside your Linux environment. Inspect its starter commit and choose a task branch.
-- [ ] Confirm README.md, api/ and evidence/ are present. Save the runtime result for Checkpoint 0.
+- [ ] Use the OS guide to install the six preparation tools inside the Linux environment that contains your student clone. Leave Kubernetes for Module 2.
+- [ ] From ~/containers-practice-starter, run bash scripts/preflight.sh --runtime and save the report to evidence/module-0/preflight.txt.
+- [ ] Explain what the version checks and hello container prove. Resolve failures before using the result as the Checkpoint 0 baseline.
 
-**Required evidence:** The hello container succeeds, your cloned learner workspace is available inside Linux, and its starter commit is visible.
-
-**Check:** Run `bash scripts/preflight.sh --runtime`. Node.js is not needed for this preparation check.
+**Required evidence:** All six preparation tools respond, the hello container executes successfully, and evidence/module-0/preflight.txt records the actual result.
 
 - [ ] Common interface checks completed
 - [ ] Evidence saved and retrievable
@@ -339,7 +335,7 @@ Result: NOT RUN · Elapsed time: ___ · Evidence: ___ · Issues: ___
 
 **Required evidence:** Another developer should be able to inspect the repo and reproduce the runtime.
 
-**Check:** Use `process`, `image`, or `api` vet checks at the appropriate stage. See [solution checks](../../docs/vetting.md).
+**Check:** Use `process`, `image`, or `api` vet checks at the appropriate stage. See [solution checks](vetting.md).
 
 - [ ] Common interface checks completed
 - [ ] Evidence saved and retrievable
@@ -358,7 +354,7 @@ Result: NOT RUN · Elapsed time: ___ · Evidence: ___ · Issues: ___
 
 **Required evidence:** The API responds before it is packaged, and its dependencies are documented.
 
-**Check:** Use `process`, `image`, or `api` vet checks at the appropriate stage. See [solution checks](../../docs/vetting.md).
+**Check:** Use `process`, `image`, or `api` vet checks at the appropriate stage. See [solution checks](vetting.md).
 
 - [ ] Common interface checks completed
 - [ ] Evidence saved and retrievable
@@ -377,7 +373,7 @@ Result: NOT RUN · Elapsed time: ___ · Evidence: ___ · Issues: ___
 
 **Required evidence:** A call to /health succeeds through the published container port.
 
-**Check:** Use `process`, `image`, or `api` vet checks at the appropriate stage. See [solution checks](../../docs/vetting.md).
+**Check:** Use `process`, `image`, or `api` vet checks at the appropriate stage. See [solution checks](vetting.md).
 
 - [ ] Common interface checks completed
 - [ ] Evidence saved and retrievable
@@ -396,7 +392,7 @@ Result: NOT RUN · Elapsed time: ___ · Evidence: ___ · Issues: ___
 
 **Required evidence:** The image identifier remains unchanged when runtime configuration changes.
 
-**Check:** Use `process`, `image`, or `api` vet checks at the appropriate stage. See [solution checks](../../docs/vetting.md).
+**Check:** Use `process`, `image`, or `api` vet checks at the appropriate stage. See [solution checks](vetting.md).
 
 - [ ] Common interface checks completed
 - [ ] Evidence saved and retrievable
@@ -415,7 +411,7 @@ Result: NOT RUN · Elapsed time: ___ · Evidence: ___ · Issues: ___
 
 **Required evidence:** Create a record through the API, then retrieve it from PostgreSQL.
 
-**Check:** Use `process`, `image`, or `api` vet checks at the appropriate stage. See [solution checks](../../docs/vetting.md).
+**Check:** Use `process`, `image`, or `api` vet checks at the appropriate stage. See [solution checks](vetting.md).
 
 - [ ] Common interface checks completed
 - [ ] Evidence saved and retrievable
@@ -434,7 +430,7 @@ Result: NOT RUN · Elapsed time: ___ · Evidence: ___ · Issues: ___
 
 **Required evidence:** Records survive database-container replacement when the same persistent volume is reused.
 
-**Check:** Use `process`, `image`, or `api` vet checks at the appropriate stage. See [solution checks](../../docs/vetting.md).
+**Check:** Use `process`, `image`, or `api` vet checks at the appropriate stage. See [solution checks](vetting.md).
 
 - [ ] Common interface checks completed
 - [ ] Evidence saved and retrievable
@@ -453,7 +449,7 @@ Result: NOT RUN · Elapsed time: ___ · Evidence: ___ · Issues: ___
 
 **Required evidence:** The API still passes its health test after the image is rebuilt.
 
-**Check:** Use `process`, `image`, or `api` vet checks at the appropriate stage. See [solution checks](../../docs/vetting.md).
+**Check:** Use `process`, `image`, or `api` vet checks at the appropriate stage. See [solution checks](vetting.md).
 
 - [ ] Common interface checks completed
 - [ ] Evidence saved and retrievable
@@ -472,7 +468,7 @@ Result: NOT RUN · Elapsed time: ___ · Evidence: ___ · Issues: ___
 
 **Required evidence:** Review a plan, apply the lab configuration, and inspect the resulting outputs.
 
-**Check:** Use `process`, `image`, or `api` vet checks at the appropriate stage. See [solution checks](../../docs/vetting.md).
+**Check:** Use `process`, `image`, or `api` vet checks at the appropriate stage. See [solution checks](vetting.md).
 
 - [ ] Common interface checks completed
 - [ ] Evidence saved and retrievable
@@ -491,7 +487,7 @@ Result: NOT RUN · Elapsed time: ___ · Evidence: ___ · Issues: ___
 
 **Required evidence:** The environment can be rebuilt and the API tested without undocumented manual steps.
 
-**Check:** Use `process`, `image`, or `api` vet checks at the appropriate stage. See [solution checks](../../docs/vetting.md).
+**Check:** Use `process`, `image`, or `api` vet checks at the appropriate stage. See [solution checks](vetting.md).
 
 - [ ] Common interface checks completed
 - [ ] Evidence saved and retrievable
@@ -510,7 +506,7 @@ Result: NOT RUN · Elapsed time: ___ · Evidence: ___ · Issues: ___
 
 **Required evidence:** Both environments respond, and the image identity is unchanged.
 
-**Check:** Use `process`, `image`, or `api` vet checks at the appropriate stage. See [solution checks](../../docs/vetting.md).
+**Check:** Use `process`, `image`, or `api` vet checks at the appropriate stage. See [solution checks](vetting.md).
 
 - [ ] Common interface checks completed
 - [ ] Evidence saved and retrievable
@@ -529,7 +525,7 @@ Result: NOT RUN · Elapsed time: ___ · Evidence: ___ · Issues: ___
 
 **Required evidence:** Image, configuration, network, state, and recovery have clear boundaries.
 
-**Check:** Use `process`, `image`, or `api` vet checks at the appropriate stage. See [solution checks](../../docs/vetting.md).
+**Check:** Use `process`, `image`, or `api` vet checks at the appropriate stage. See [solution checks](vetting.md).
 
 - [ ] Common interface checks completed
 - [ ] Evidence saved and retrievable
