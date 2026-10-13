@@ -14,11 +14,16 @@ CI runs API/checker unit tests and repository syntax/link checks. Its API tests 
 
 ## Hosted repository
 
-Recommended name: `containers-in-practice-labs`.
+The hosted starter is [jcpopdigitalpartners/fussy-stork](https://github.com/jcpopdigitalpartners/fussy-stork). Its public `main` branch and `starter-v0.1.0` tag contain the learner starting point.
 
-Create an empty GitHub repository in the intended account or organization, then supply that repository URL for source publication. This session’s GitHub tools cannot create the repository, so no public clone URL has been fabricated.
+The course and student README use:
 
-Once the destination exists, the starter source can be published using the included history. Choose the code/content licensing and the repository audience before distributing a public edition. Add the real clone URL to the student README and update the course’s ZIP-based workspace handoff to the clone workflow. Those course-site changes are a separate publication; this package does not rewrite the live course.
+```bash
+git clone https://github.com/jcpopdigitalpartners/fussy-stork.git ~/containers-practice-starter
+cd ~/containers-practice-starter
+```
+
+The destination matches the course's terminal commands. Clone inside the prepared Linux environment; the clone includes history and needs no `git init`. Keep course handoff instructions and this README aligned when publishing future starter changes. The portable bundle is an offline option, not the primary hosted handoff.
 
 ## Next fixture work
 

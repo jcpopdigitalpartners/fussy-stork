@@ -8,14 +8,18 @@ Carry the same workload from local execution through packaging, scaling, recover
 
 Prepare a Linux environment using the course’s **Ubuntu/WSL, RHEL/Fedora, macOS or Windows** path. macOS runs the workload inside its Lima guest; Windows runs it inside Ubuntu WSL 2. Clone and work inside that Linux environment.
 
-This first release includes a portable Git bundle. After downloading and extracting the repository package, clone the bundle into a new working directory:
+Clone the [learner repository](https://github.com/jcpopdigitalpartners/fussy-stork) into the folder used by the course commands:
 
 ```bash
-git clone /path/to/containers-in-practice-labs.bundle containers-in-practice-work
-cd containers-in-practice-work
+git clone https://github.com/jcpopdigitalpartners/fussy-stork.git ~/containers-practice-starter
+cd ~/containers-practice-starter
+git remote -v
+git log --oneline -3
 ```
 
-Replace `/path/to/` with the bundle’s actual location. When an instructor publishes a hosted repository, use that clone URL instead of the local bundle path. No hosted URL has been assigned to this release.
+The clone already includes Git history. Do not run `git init` or create a second initial commit. `starter-v0.1.0` identifies the supplied starting point; your later `checkpoint-0` tag records your own verified baseline. Cloning the public starter does not require a GitHub account. Local commits need your Git identity; use [the Git workflow](docs/workflow.md).
+
+Use the same root directory throughout the course. If it already exists, inspect it and preserve any earlier work; reuse a clone of this repository or choose a separate destination and adjust later paths consistently. The portable bundle remains an offline distribution option.
 
 Before the application investigation, check the six preparation tools:
 
